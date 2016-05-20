@@ -28,6 +28,7 @@ all: QR2.rb
 	@echo "#############"
 	@echo
 	diff -s QR.rb QR2.rb
+	./src/grab_intermediate.sh
 
 check: all
 	@sha1sum --quiet -c SHA1SUMS
